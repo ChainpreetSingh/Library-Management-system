@@ -1,0 +1,70 @@
+﻿/* Library Management System Theme */
+:root {
+    --primary-dark: #343a40;
+    --secondary-dark: #495057;
+    --accent-color: #8d6e63;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--primary-dark) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.library-card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    height: 100%;
+}
+
+    .library-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+.btn-outline-dark {
+    border-color: var(--primary-dark);
+    color: var(--primary-dark);
+}
+
+    .btn-outline-dark:hover {
+        background-color: var(--primary-dark);
+        color: white;
+    }
+
+.table th {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+/* Form styling */
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(141, 110, 99, 0.25);
+}
+
+/* Custom badge for stock */
+.stock-badge {
+    font-size: 0.9rem;
+    padding: 0.35em 0.65em;
+}
+
+.stock-high {
+    background-color: #28a745;
+}
+
+.stock-medium {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.stock-low {
+    background-color: #dc3545;
+}

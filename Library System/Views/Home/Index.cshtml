@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Library Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Library Management System</h1>
+    <p class="lead">A complete solution for managing your library's authors and book collections.</p>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card library-card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user-edit"></i> Authors</h5>
+                    <p class="card-text">Manage all authors in your library collection.</p>
+                    <a asp-controller="Authors" asp-action="Index" class="btn btn-outline-dark">View Authors</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card library-card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-book"></i> Books</h5>
+                    <p class="card-text">Manage all books and their inventory.</p>
+                    <a asp-controller="Books" asp-action="Index" class="btn btn-outline-dark">View Books</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
